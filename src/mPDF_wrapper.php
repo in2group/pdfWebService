@@ -30,7 +30,8 @@ class mPDF_wrapper
                 //    'orientation'   => 'L',
                 
             $mpdf = new \Mpdf\Mpdf( $mpdfConfig );
-
+            $mpdf->setAutoTopMargin = 'stretch';
+            
             //  Watermark
             $this->setWatermark($mpdf, $watermark);
             

@@ -1,11 +1,10 @@
 <?php
 
-include("mPDFwrapper.php");
+include("mPDF_wrapper.php");
 
 header("Content-Type:application/json");
 
 // HTML
-$html = null;
 if( ! empty( $_POST['html']) )
 {
     $html = $_POST['html'];
@@ -19,6 +18,7 @@ if( ! empty( $_POST['header']) )
     $header = $_POST['header'];
     $header = base64_decode( $header );
 }
+
 
 
 // Footer
@@ -53,11 +53,13 @@ $success = true;
 $mpdf = new mPDF_wrapper();
 
 
+
 $output = $mpdf->writeOutput( $html , $header, $footer, $watermark, $page );
 
 echo  json_encode(   $output );  // api returns
 
 exit;
+
 
 
 

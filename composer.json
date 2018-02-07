@@ -1,5 +1,24 @@
 {
+    "name": "in2group/mpdfwrapper",
+    "description": "Boilerplate package for creating other packages.",
+    "keywords": ["mPDFWrapper", "pdf", "mpdf"],
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "in2Group"
+        }
+    ],
+    "type": "project",
     "require": {
-        "mpdf/mpdf": "^7.0"
+		"php": ">=5.4",
+                "mpdf/mpdf": "7.0.0"
+    },
+	"require-dev": {
+		"phpunit/phpunit": "5.2.*"
+    },
+	"autoload": {
+        "psr-4": {
+            "in2Group\\mPDFWrapper\\": "src/"
+        }
     }
 }
