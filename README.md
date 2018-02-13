@@ -71,4 +71,4 @@ pdfData      : if success, base64 encoded stream
 
    
 ### Licence information:
-mPDFWrapper was written by [In2Group](https://github.com/in2group/) and is released under the [GNU GPL v3 licence](LICENSE).
+mPDFWrapper was written by [In2Group](https://github.com/in2group/) and is released under the [GNU GPL v2 licence](LICENSE).
